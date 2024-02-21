@@ -19,8 +19,8 @@ body{
 
 }
 .container_logo{
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     align-items: center;
     display: flex;
 }
@@ -50,6 +50,10 @@ header{
     grid-template-columns: repeat(2,1fr);
     column-gap: 2rem;
     width: 100%;
+}
+.descripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 .conatiner_imagen_jael{
     width: 35rem;
@@ -112,8 +116,6 @@ header{
 .name{
     background: #ccc;
     background: linear-gradient(to bottom right, #F2527D,#D936A0,#F249D6, #18D9D9 );
-    font-family: system-ui;
-    font-size: 4rem;
     line-height: 115%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -193,10 +195,12 @@ header{
 }
 .proyectos_realizados{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     column-gap: 2rem;
     row-gap:  3rem;
     margin: auto;
+    border-bottom: 5px solid white;
+    padding-bottom: 30px;
 }
 .proyecto{
     width: 18rem;
@@ -317,4 +321,39 @@ a{
     width: 10rem;
     height: 26.5rem;
    }
+}
+.skills_title{
+    background: #ccc;
+    background: linear-gradient(to bottom right, #F2527D,#D936A0,#F249D6, #18D9D9 );
+    font-family: system-ui;
+    line-height: 115%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 50px;
+    font-family: var(--fontBebas);
+    margin-bottom: 0;
+}
+.habilidades{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    width: 90%;
+}
+.contenido{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    font-size: 16px;
+    margin: auto;
+}
+@media (max-width: 800px) {
+    .habilidades{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 400px) {
+    .habilidades{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }
