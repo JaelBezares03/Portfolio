@@ -42,7 +42,7 @@ nav{
     align-items: center;
 }
 header{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     border-bottom: 5px solid white;
 }
 .presentacion{
@@ -65,6 +65,7 @@ header{
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 .social{
     width: auto;
@@ -272,6 +273,7 @@ a{
     }
     .contacts{
         margin: auto;
+        margin-bottom: 10px;
     }
     .lenguajes_programacion{
         grid-template-columns: repeat(2,1fr);
@@ -291,7 +293,7 @@ a{
         border-radius: 0px3;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 420px){
     .presentacion{
         grid-template-columns: repeat(1,1fr);
     }
@@ -351,9 +353,68 @@ a{
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .habilidades{
         grid-template-columns: repeat(1,1fr);
     }
     
+}
+.more_abt_me{
+    padding-bottom: 30px;
+    border-bottom: 5px solid white;
+}
+.container_footer{
+    width: 7rem;
+    height: 7rem;
+  
+}
+.title_ctc_ftr{
+    border-bottom: 2px solid white;
+    
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.contacto_footer{
+    margin-right: 30px;
+}
+.logo_footer{
+    width:1.5rem ;
+    height: 1.5rem;
+    
+}
+.links-footer{
+    display: flex;
+   align-items: center;
+   margin: auto;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+.gmail{
+    
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: red;
+    border: 0;
+}
+@media (max-width: 420px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container_footer{
+        margin: auto;
+       
+    }
+    .title_ctc_ftr{
+        width: 90%;
+    }
+    .contacto_footer{
+        margin: auto;
+    }
 }
