@@ -154,7 +154,7 @@ header {
 }
 .lenguajes_programacion {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   width: 90%;
   height: 13rem;
   border: 0px;
